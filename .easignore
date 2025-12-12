@@ -1,0 +1,60 @@
+# ==================================
+# EAS Build Ignore File
+# ==================================
+# Files and directories listed here will NOT be uploaded to EAS Build.
+# This speeds up builds by excluding unnecessary files.
+# 
+# Note: .gitignore patterns are automatically included.
+# This file is for ADDITIONAL exclusions specific to EAS builds.
+
+# ==================================
+# Web-only files (not needed for native builds)
+# ==================================
+apps/web/
+.next/
+out/
+
+# ==================================
+# Documentation
+# ==================================
+docs/
+*.md
+!README.md
+
+# ==================================
+# Development tools
+# ==================================
+.github/
+.husky/
+.vscode/
+.idea/
+
+# ==================================
+# Test files
+# ==================================
+__tests__/
+__mocks__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+coverage/
+jest.config.*
+
+# ==================================
+# Supabase (local development only)
+# ==================================
+supabase/
+!supabase/functions/
+
+# ==================================
+# Other unnecessary files
+# ==================================
+.turbo/
+turbo.json
+*.tsbuildinfo
+CHANGELOG.md
+LICENSE
+.prettierrc*
+.eslintrc*
+eslint.config.*

@@ -1,0 +1,37 @@
+{
+  "name": "arc-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "mobile": "npm run dev --workspace=@arc/mobile",
+    "mobile:ios": "npm run ios --workspace=@arc/mobile",
+    "mobile:android": "npm run android --workspace=@arc/mobile",
+    "mobile:web": "npm run web --workspace=@arc/mobile",
+    "web": "npm run dev --workspace=@arc/web",
+    "web:build": "npm run build --workspace=@arc/web",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:reset": "supabase db reset",
+    "supabase:migrate": "supabase migration up",
+    "supabase:generate-types": "supabase gen types typescript --local > packages/shared/src/types/database.ts",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "npm@10.2.0"
+}
