@@ -1,0 +1,12 @@
+Checking new Issue/Fix/Feature
+great thank you now fetch: copilot/iap-payment-phases-continuation and rebase the latest changes from main if needed please from github and evaluate the proposed fixes.
+
+Fixing Errors
+You are a top tier engineer: next review issue, please analyze it ensure it is correct direction and doesn't make any conflicts please and most of all makes this into the best written code ever free of bugs, optimized, KISS and sexy.  tell me what you recommend before doing anything. I repeat don't make changes until I review. double check that nothing duplicate is being created and no loss of functionality anywhere including but not limited to frontend, supabase, apis, etc.
+
+Evaluation: Don't assume proposed fixes are correct, provide cost benefit analysis pros/cons of implementing changes/fixes without over-engineering unnecessarily which in of itself can cause issues.
+
+Execution: Create a todo list of much smaller tasks and steps to help prevent hallucinations and mistakes and then execute on it.
+
+Code Review
+As a top tier engineer you know you need to have your code reviewed so you pass it off to the top tier code reviewer to review how the changes made are going.  They analyze not only the code for accuracy but also intent and ensure the objectives of it working and are working flawlessly.
